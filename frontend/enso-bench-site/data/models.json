@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "updated": "2025-01-31T18:00:00Z",
+    "coverage_dataset": "dataset/coverage/routes_v1_ensomain.json",
+    "needle_dataset": "dataset/lc/operation_needle_bridge_01",
+    "description": "Leaderboard compiled from Enso shortcut execution artifacts"
+  },
+  "runs": [
+    {
+      "agent": "gpt-5-high",
+      "rank": 1,
+      "coverage_run": "./data/samples/coverage/20250131-gpt-5-high",
+      "coverage_run_id": "20250131-gpt-5-high",
+      "coverage_score": {
+        "median": 4.18,
+        "max": 4.38,
+        "min": 3.98,
+        "unique_actions": 12
+      },
+      "intent_eval": {
+        "dataset": "dataset/coverage/routes_v1_ensomain.json",
+        "score": 3.92
+      },
+      "needle_eval": {
+        "dataset": "dataset/lc/operation_needle_bridge_01",
+        "run_dir": "./data/samples/needle/20250131-gpt-5-high-needle",
+        "run_id": "20250131-gpt-5-high-needle",
+        "result": "PASS",
+        "score": 4.28
+      }
+    },
+    {
+      "agent": "claude-opus-4.1",
+      "rank": 2,
+      "coverage_run": "./data/samples/coverage/20250131-claude-opus-4-1",
+      "coverage_run_id": "20250131-claude-opus-4-1",
+      "coverage_score": {
+        "median": 3.72,
+        "max": 3.82,
+        "min": 3.3,
+        "unique_actions": 11
+      },
+      "intent_eval": {
+        "dataset": "dataset/coverage/routes_v1_ensomain.json",
+        "score": 3.58
+      },
+      "needle_eval": {
+        "dataset": "dataset/lc/operation_needle_bridge_01",
+        "run_dir": "./data/samples/needle/20250131-claude-opus-4-1-needle",
+        "run_id": "20250131-claude-opus-4-1-needle",
+        "result": "PASS_WITH_WARNINGS",
+        "score": 3.68
+      }
+    },
+    {
+      "agent": "gemini 2.5 pro",
+      "rank": 3,
+      "coverage_run": "./data/samples/coverage/20250131-gemini-25-pro",
+      "coverage_run_id": "20250131-gemini-25-pro",
+      "coverage_score": {
+        "median": 3.7,
+        "max": 3.78,
+        "min": 3.52,
+        "unique_actions": 11
+      },
+      "intent_eval": {
+        "dataset": "dataset/coverage/routes_v1_ensomain.json",
+        "score": 3.54
+      },
+      "needle_eval": {
+        "dataset": "dataset/lc/operation_needle_bridge_01",
+        "run_dir": "./data/samples/needle/20250131-gemini-25-pro-needle",
+        "run_id": "20250131-gemini-25-pro-needle",
+        "result": "PASS_WITH_WARNINGS",
+        "score": 3.62
+      }
+    },
+    {
+      "agent": "gpt-oss-20b",
+      "rank": 4,
+      "coverage_run": "./data/samples/coverage/20250131-gpt-oss-20b",
+      "coverage_run_id": "20250131-gpt-oss-20b",
+      "coverage_score": {
+        "median": 2.6,
+        "max": 2.65,
+        "min": 2.45,
+        "unique_actions": 8
+      },
+      "intent_eval": {
+        "dataset": "dataset/coverage/routes_v1_ensomain.json",
+        "score": 2.32
+      },
+      "needle_eval": {
+        "dataset": "dataset/lc/operation_needle_bridge_01",
+        "run_dir": "./data/samples/needle/20250131-gpt-oss-20b-needle",
+        "run_id": "20250131-gpt-oss-20b-needle",
+        "result": "FAIL",
+        "score": 2.05
+      }
+    },
+    {
+      "agent": "naver-hyperclova-thinking",
+      "rank": 5,
+      "coverage_run": "./data/samples/coverage/20250131-naver-hyperclova-thinking",
+      "coverage_run_id": "20250131-naver-hyperclova-thinking",
+      "coverage_score": {
+        "median": 2.35,
+        "max": 2.4,
+        "min": 2.2,
+        "unique_actions": 6
+      },
+      "intent_eval": {
+        "dataset": "dataset/coverage/routes_v1_ensomain.json",
+        "score": 2.12
+      },
+      "needle_eval": {
+        "dataset": "dataset/lc/operation_needle_bridge_01",
+        "run_dir": "./data/samples/needle/20250131-naver-hyperclova-thinking-needle",
+        "run_id": "20250131-naver-hyperclova-thinking-needle",
+        "result": "FAIL",
+        "score": 1.85
+      }
+    }
+  ]
+}

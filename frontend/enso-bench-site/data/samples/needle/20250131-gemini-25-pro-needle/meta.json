@@ -1,0 +1,10 @@
+{
+  "bench_version": "0.1.0",
+  "dataset": "dataset/lc/operation_needle_bridge_01",
+  "agent": "gemini 2.5 pro",
+  "networks": [
+    "ethereum",
+    "base"
+  ],
+  "generated_at": "2025-01-31T16:10:00Z"
+}

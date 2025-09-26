@@ -1,0 +1,9 @@
+{
+  "prompt_id": "operation_needle_bridge_01",
+  "result": "FAIL",
+  "score": 2.05,
+  "recipient": "0xfEEdFEEdFEEdFEEdFEEdFEEdFEEdFEEdfEEd0000",
+  "min_out": "600000000",
+  "gas_drop_wei": "0x0",
+  "notes": "LayerZero bridge executed without adapter params; swap leg never triggered"
+}

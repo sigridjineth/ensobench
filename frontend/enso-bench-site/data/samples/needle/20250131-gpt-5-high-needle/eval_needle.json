@@ -1,0 +1,9 @@
+{
+  "prompt_id": "operation_needle_bridge_01",
+  "result": "PASS",
+  "score": 4.32,
+  "recipient": "0x8d9B7d1C9a9A53B5f80E4df1a6dE20c8cAfE0000",
+  "min_out": "600000000",
+  "gas_drop_wei": "0x2386F26FC10000",
+  "notes": "Bridged 0.2 ETH to Base, supplied gas drop, swapped to USDC via Aerodrome"
+}

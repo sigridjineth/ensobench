@@ -1,0 +1,104 @@
+{
+  "site": {
+    "title": "EnsoBench",
+    "nav": {
+      "home": "Overview",
+      "trajectories": "Intent Explorer",
+      "needle": "Operation Needle"
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Benchmarking agents on Enso Shortcuts",
+      "subtitle": "Weekly snapshots of how automation stacks plan and execute Enso routes and bundles across chains. Coverage rewards breadth, while Operation Needle checks if intents survive long-context noise.",
+      "pillars": [
+        {
+          "title": "Coverage",
+          "text": "Unique action signatures across DEX, lending, yield, bridge, and derivative domains with composition bonuses for atomic bundles."
+        },
+        {
+          "title": "Intent quality",
+          "text": "Intent score tracks how efficiently an agent strings together multi-step bundles using Enso’s routing metadata."
+        },
+        {
+          "title": "Operation Needle",
+          "text": "Long-context prompts hiding a single high-priority instruction; success demands correct calldata and fork execution."
+        }
+      ]
+    },
+    "scoreboard": {
+      "title": "Latest EnsoBench leaderboard",
+      "source": "Datasets:",
+      "link_text": "Inspect runs",
+      "link_href": "./trajectories.html"
+    },
+    "charts": {
+      "coverage": "Coverage vs Intent Scores",
+      "needle": "Operation Needle Scores"
+    },
+    "howto": {
+      "title": "Update the snapshot",
+      "steps": [
+        "Drop fresh run outputs under runs/<timestamp> (per_tx.jsonl, eval_per_tx.jsonl, eval_score.json, optional eval_needle.json).",
+        "Append coverage + needle results into runs/bench_scores.jsonl, then regenerate data/models.json (script recommended).",
+        "Copy supporting artifacts into data/samples/<track>/<run_id> so the explorer can render them.",
+        "Deploy frontend/enso-bench-site to GitHub Pages, Vercel, or any static host."
+      ],
+      "footnote": "Scores on this page were captured from EnsoBench runs recorded 2025-01-31."
+    },
+    "footer": "EnsoBench — Intent-native coverage and Operation Needle validation"
+  },
+  "trajectories": {
+    "title": "Intent Explorer",
+    "subtitle": "Pick a leaderboard run or upload your own artifacts to inspect Enso action signatures, domains, and bonuses per intent.",
+    "uploader": {
+      "sample_btn": "Load selected run",
+      "or": "or",
+      "pick_label": "Upload run folder",
+      "note": "Required files: eval_per_tx.jsonl, per_tx.jsonl (optional: eval_score.json, eval_needle.json)",
+      "select_label": "Leaderboard run"
+    },
+    "detail_title": "Intent detail",
+    "close": "Close",
+    "errors": {
+      "missing_files": "The selected folder is missing eval_per_tx.jsonl or per_tx.jsonl."
+    }
+  },
+  "needle": {
+    "title": "Operation Needle",
+    "subtitle": "Needle-in-haystack prompts validate that an agent can extract the single actionable instruction and return correct Enso calldata.",
+    "datasets": {
+      "coverage": {
+        "label": "Coverage dataset",
+        "cta": "Open coverage dataset",
+        "description": "Scenario definitions for coverage scoring (domains, weights, per-tx action caps)."
+      },
+      "needle": {
+        "label": "Needle dataset",
+        "cta": "Open needle dataset",
+        "description": "Long-context Operation Needle prompts with paired ground_truth.json validators."
+      }
+    },
+    "table": {
+      "caption": "Coverage & Needle ranking",
+      "cols": {
+        "rank": "Rank",
+        "agent": "Agent",
+        "coverage": "Coverage median",
+        "intent": "Intent score",
+        "needle_result": "Needle verdict",
+        "needle_score": "Needle score",
+        "actions": "Unique actions",
+        "runs": "Runs"
+      }
+    },
+    "notes": {
+      "title": "Observations",
+      "items": [
+        "Agents that reuse response.tx.to from Enso’s API avoid execution mismatches on delegate bundles.",
+        "Needle verdicts degrade quickly when slippage or layer-zero bridge parameters are hallucinated—watch the validator logs.",
+        "Coverage gains flatten once an agent repeats the same protocol combos; diversify domains for higher unique action counts."
+      ]
+    }
+  }
+}

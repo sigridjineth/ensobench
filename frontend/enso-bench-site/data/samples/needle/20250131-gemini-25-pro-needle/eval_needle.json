@@ -1,0 +1,9 @@
+{
+  "prompt_id": "operation_needle_bridge_01",
+  "result": "PASS_WITH_WARNINGS",
+  "score": 3.62,
+  "recipient": "0x7E3a4C0f87F5abCc9f451E2cAbCDaDa7fEeD0000",
+  "min_out": "520000000",
+  "gas_drop_wei": "0x1B48EBEBAC9F000",
+  "notes": "Delivered swap but underfunded gas drop relative to prompt guidance"
+}

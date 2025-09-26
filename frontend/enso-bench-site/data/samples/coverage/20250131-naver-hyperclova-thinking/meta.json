@@ -1,0 +1,8 @@
+{
+  "bench_version": "0.1.0",
+  "dataset": "dataset/coverage/routes_v1_ensomain.json",
+  "agent": "naver-hyperclova-thinking",
+  "networks": ["linea"],
+  "generated_at": "2025-01-31T14:45:00Z",
+  "notes": "Enso coverage spanning Lynex routing and ZeroLend staking"
+}

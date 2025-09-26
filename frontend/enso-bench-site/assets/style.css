@@ -1,0 +1,41 @@
+:root {
+  --tag-dex: #0ea5e9;
+  --tag-lending: #6366f1;
+  --tag-yield: #22c55e;
+  --tag-bridge: #f97316;
+  --tag-derivatives: #14b8a6;
+  --tag-default: #475569;
+  --tag-pass: #0f766e;
+  --tag-warning: #facc15;
+  --tag-partial: #6366f1;
+  --tag-fail: #dc2626;
+}
+
+.tag {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 999px;
+  font-size: 11px;
+  color: #fff;
+}
+
+.tag-dex { background: var(--tag-dex); }
+.tag-lending { background: var(--tag-lending); }
+.tag-yield { background: var(--tag-yield); }
+.tag-bridge { background: var(--tag-bridge); }
+.tag-derivatives { background: var(--tag-derivatives); }
+.tag-default { background: var(--tag-default); }
+.tag-pass { background: var(--tag-pass); }
+.tag-warning { background: var(--tag-warning); color: #1f2937; }
+.tag-partial { background: var(--tag-partial); }
+.tag-fail { background: var(--tag-fail); }
+
+code {
+  background: #f1f5f9;
+  padding: 0 4px;
+  border-radius: 4px;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.3);
+}

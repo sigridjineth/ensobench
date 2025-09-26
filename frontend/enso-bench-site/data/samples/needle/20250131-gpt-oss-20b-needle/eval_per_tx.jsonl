@@ -1,0 +1,1 @@
+{"intent_id":"needle-lz-bridge-base","domains":["bridge","dex"],"actions":[{"chain_id":1,"action":"bridge","protocol":"layerzero","tokens":["ETH","ETH"],"notes":"Gas drop omitted"},{"chain_id":8453,"action":"swap","protocol":"aerodrome","tokens":["ETH","USDC"],"notes":"Swap attempted but revert due to no gas"}],"bonus":0.00,"penalty":0.45,"score":2.10}

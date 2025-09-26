@@ -1,0 +1,11 @@
+{
+  "bench_version": "0.1.0",
+  "dataset": "dataset/coverage/routes_v1_ensomain.json",
+  "agent": "gpt-oss-20b",
+  "networks": [
+    "arbitrum",
+    "optimism"
+  ],
+  "generated_at": "2025-01-31T15:05:00Z",
+  "notes": "Enso coverage spanning Camelot routing and LayerZero -> Exactly flows"
+}

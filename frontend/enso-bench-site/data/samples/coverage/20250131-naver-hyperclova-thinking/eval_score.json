@@ -1,0 +1,10 @@
+{
+  "final_score": 2.3,
+  "bonus": 0.15,
+  "penalty": 0.23,
+  "by_domain": {
+    "dex": 1.2,
+    "bridge": 0.55,
+    "yield": 0.55
+  }
+}

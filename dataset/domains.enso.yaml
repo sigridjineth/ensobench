@@ -1,0 +1,30 @@
+version: "0.1.0"
+per_tx_action_limit: 6
+
+domains:
+  dex:
+    weight: 1.0
+    allow:
+      - action: swap
+  lending:
+    weight: 1.25
+    allow:
+      - action: deposit
+      - action: borrow
+      - action: repay
+      - action: redeem
+  yield:
+    weight: 1.25
+    allow:
+      - action: stake
+      - action: harvest
+      - action: claim
+  bridge:
+    weight: 1.5
+    allow:
+      - action: bridge
+  other:
+    weight: 0.5
+    allow:
+      - action: approve
+      - action: unknown

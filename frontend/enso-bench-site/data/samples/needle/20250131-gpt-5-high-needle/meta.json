@@ -1,0 +1,10 @@
+{
+  "bench_version": "0.1.0",
+  "dataset": "dataset/lc/operation_needle_bridge_01",
+  "agent": "gpt-5-high",
+  "networks": [
+    "ethereum",
+    "base"
+  ],
+  "generated_at": "2025-01-31T17:45:00Z"
+}

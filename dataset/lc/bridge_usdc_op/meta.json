@@ -1,0 +1,5 @@
+{
+  "id": "lc_bridge_usdc_op",
+  "description": "Needle prompt requiring bridge from Arbitrum to Optimism",
+  "version": "0.1.0"
+}

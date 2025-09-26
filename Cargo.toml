@@ -1,0 +1,37 @@
+[workspace]
+members = [
+    "crates/runner",
+    "crates/evaluator",
+    "crates/hian-gen"
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+version = "0.1.0"
+authors = ["EnsoBench Team"]
+license = "Apache-2.0"
+
+[workspace.dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+dirs = "5"
+indexmap = { version = "2", features = ["serde"] }
+once_cell = "1"
+rand = "0.8"
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde_yaml = "0.9"
+thiserror = "1"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "signal", "time", "process"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["fmt", "env-filter"] }
+url = "2"
+chrono = { version = "0.4", features = ["serde"] }
+regex = "1"
+hex = "0.4"
+primitive-types = "0.12"
+
+[workspace.metadata]
+description = "Workspace for EnsoBench tooling"

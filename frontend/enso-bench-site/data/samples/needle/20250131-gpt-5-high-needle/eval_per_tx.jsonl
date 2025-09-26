@@ -1,0 +1,1 @@
+{"intent_id":"needle-lz-bridge-base","domains":["bridge","dex"],"actions":[{"chain_id":1,"action":"bridge","protocol":"layerzero","tokens":["ETH","ETH"],"notes":"Send 0.2 ETH to Base with gas drop"},{"chain_id":8453,"action":"swap","protocol":"aerodrome","tokens":["ETH","USDC"],"notes":"Base Aerodrome ETH/USDC pool"}],"bonus":0.50,"penalty":0.00,"score":4.35}

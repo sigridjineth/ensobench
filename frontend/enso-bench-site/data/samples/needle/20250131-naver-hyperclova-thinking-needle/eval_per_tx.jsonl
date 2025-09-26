@@ -1,0 +1,1 @@
+{"intent_id":"needle-lz-bridge-base","domains":["bridge","dex"],"actions":[{"chain_id":1,"action":"bridge","protocol":"layerzero","tokens":["ETH","ETH"],"notes":"Wrong recipient on Base"},{"chain_id":8453,"action":"swap","protocol":"aerodrome","tokens":["ETH","USDC"],"notes":"Swap skipped because funds unrecoverable"}],"bonus":0.00,"penalty":0.55,"score":1.85}

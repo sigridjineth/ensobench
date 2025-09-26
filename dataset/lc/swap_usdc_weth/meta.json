@@ -1,0 +1,5 @@
+{
+  "id": "lc_swap_usdc_weth",
+  "description": "Needle prompt requiring USDC->WETH swap on mainnet",
+  "version": "0.1.0"
+}

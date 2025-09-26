@@ -1,0 +1,10 @@
+{
+  "bench_version": "0.1.0",
+  "dataset": "dataset/coverage/routes_v1_ensomain.json",
+  "agent": "gemini 2.5 pro",
+  "networks": [
+    "polygon"
+  ],
+  "generated_at": "2025-01-31T15:40:00Z",
+  "notes": "Enso coverage paralleling Stargate bridge and Radiant staking flows"
+}

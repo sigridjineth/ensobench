@@ -1,0 +1,15 @@
+chainId: 1
+routingStrategy: router
+actions:
+  - action: approve
+    token: 0xA0b86991c6218b36c1d19d4a2e9eb0ce3606eb48
+    spender: router
+  - action: swap
+    tokenIn: 0xA0b86991c6218b36c1d19d4a2e9eb0ce3606eb48
+    tokenOut: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2
+    amount: "100000000"
+    slippageBps: 40
+  - action: deposit
+    protocol: aave_v3
+    asset: 0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2
+    amountSource: fromPrevious
