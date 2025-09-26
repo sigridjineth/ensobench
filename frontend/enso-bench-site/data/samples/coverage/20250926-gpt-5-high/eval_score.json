@@ -1,0 +1,11 @@
+{
+  "final_score": 4.25,
+  "bonus": 1.00,
+  "penalty": 0.0,
+  "by_domain": {
+    "dex": 1.65,
+    "bridge": 1.10,
+    "lending": 0.85,
+    "yield": 0.65
+  }
+}

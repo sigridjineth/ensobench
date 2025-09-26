@@ -1,0 +1,11 @@
+{
+  "bench_version": "0.1.0",
+  "dataset": "dataset/coverage/routes_v1_ensomain.json",
+  "agent": "gpt-5-high",
+  "networks": [
+    "ethereum",
+    "base"
+  ],
+  "generated_at": "2025-01-31T17:20:00Z",
+  "notes": "Enso router and delegate flows across Ethereum/Base"
+}
